@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Nome:"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView5"
+        app:layout_constraintRight_toLeftOf="@+id/nome"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.083" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="E-mail:"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView5"
+        app:layout_constraintRight_toLeftOf="@+id/nome"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.083" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Data Nascimento:"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView5"
+        app:layout_constraintRight_toLeftOf="@+id/nome"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.083" />
+
+    <TextView
+        android:id="@+id/nascimento"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Telefone:"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView5"
+        app:layout_constraintRight_toLeftOf="@+id/nome"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.083" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"/>
+
+</LinearLayout>

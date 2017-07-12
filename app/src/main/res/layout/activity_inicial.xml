@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorgreen"
+
+    tools:context="br.ufop.barbara.futmanbarbara.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="244dp"
+        android:layout_height="305dp"
+        app:srcCompat="@drawable/players"
+        android:layout_above="@+id/textView1"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="32dp"
+        android:textAlignment="center"
+        android:text="Gerenciador de Peladas"
+        android:layout_marginTop="67dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:text="FutManBarbara
+
+        CSI489 - Computaçao Movel"
+        android:layout_above="@+id/textView12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:text="Acesse:
+        https://github.com/chesman12/FutManBarbara"
+        android:layout_marginBottom="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

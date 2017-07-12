@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Nome:"
+        android:id="@+id/textView4"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView5"
+        app:layout_constraintRight_toLeftOf="@+id/nome"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.083" />
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Descriçao:"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView5"
+        app:layout_constraintRight_toLeftOf="@+id/nome"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.083" />
+    <TextView
+        android:id="@+id/descricao"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="51dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Tempos:"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView5"
+        app:layout_constraintRight_toLeftOf="@+id/nome"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.083" />
+
+    <TextView
+        android:id="@+id/tempo"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="119dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Duraçao da partida:"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView5"
+        app:layout_constraintRight_toLeftOf="@+id/nome"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.083" />
+
+    <TextView
+        android:id="@+id/duracao"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteY="136dp"
+        tools:layout_editor_absoluteX="192dp" />
+
+    <TextView
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Numero de jogadores:"
+        tools:layout_editor_absoluteY="73dp"
+        tools:layout_editor_absoluteX="26dp"
+        android:id="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/quantidade"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteY="72dp"
+        tools:layout_editor_absoluteX="110dp" />
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.ufop.barbara.futmanbarbara.Jogadores">
+
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="132dp"
+        android:layout_height="251dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/toolbar5"
+        android:layout_toRightOf="@+id/toolbar5"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="194dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="105dp"
+        android:layout_height="128dp"
+        app:srcCompat="@drawable/blusa1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="53dp" />
+
+
+    <Chronometer
+            android:id="@+id/chronometer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:typeface="serif"
+            tools:layout_editor_absoluteY="97dp"
+            tools:layout_editor_absoluteX="175dp"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/button2"
+            android:layout_alignStart="@+id/button2" />
+
+    <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startChronometer"
+            android:text="Button"
+            tools:layout_editor_absoluteY="489dp"
+            tools:layout_editor_absoluteX="209dp"
+        android:layout_alignBottom="@+id/lista"
+        android:layout_toRightOf="@+id/lista"
+        android:layout_toEndOf="@+id/lista" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="resetChronometer"
+        android:text="Button"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="489dp"
+        android:layout_alignBottom="@+id/lista"
+        android:layout_toRightOf="@+id/button3"
+        android:layout_toEndOf="@+id/button3" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar6"
+        app:title="Partida"
+        android:layout_width="395dp"
+        android:layout_height="56dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:titleTextColor="#FFFFFF"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="-2dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="105dp"
+        android:layout_height="128dp"
+        app:srcCompat="@drawable/blusa2"
+        tools:layout_editor_absoluteY="53dp"
+        tools:layout_editor_absoluteX="263dp" />
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="132dp"
+        android:layout_height="251dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/toolbar5"
+        android:layout_toRightOf="@+id/toolbar5"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="194dp" />
+
+
+</android.support.constraint.ConstraintLayout>
