@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="br.ufop.barbara.futmanbarbara.PeladaEdit">
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="br.ufop.barbara.futmanbarbara.PeladaEdit">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -29,7 +34,7 @@
         android:text="Nome" />
 
     <EditText
-        android:id="@+id/txtnome"
+        android:id="@+id/txtnomee"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -40,12 +45,38 @@
         android:layout_height="wrap_content"
         android:text="Descriçao" />
 
+        <EditText
+            android:id="@+id/txtdesce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Local" />
+
     <EditText
-        android:id="@+id/txtdesc"
+        android:id="@+id/txtlocale"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Horario" />
+
+    <EditText
+        android:id="@+id/txthorarioe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+
 
     <TextView
         android:layout_width="match_parent"
@@ -61,13 +92,13 @@
         >
 
         <RadioButton
-            android:id="@+id/radio0"
+            android:id="@+id/radio0e"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1 Tempo" />
 
         <RadioButton
-            android:id="@+id/radio1"
+            android:id="@+id/radio1e"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2 Tempos" />
@@ -81,8 +112,8 @@
         android:text="Duraçao da partida" />
 
 
-    <Spinner
-        android:id="@+id/txtduracao"
+    <EditText
+        android:id="@+id/spinnerduracaoe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -91,30 +122,34 @@
         android:layout_height="wrap_content"
         android:text="Numero de jogadores" />
 
-    <Spinner
-        android:id="@+id/spinner1"
+    <EditText
+        android:id="@+id/spinnerqtdee"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="113dp"
-        android:layout_height="wrap_content"
-        android:onClick="confirmar"
-        android:text="Alterar" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="confirmar"
+            android:text="Alterar" />
 
-    <Button
-        android:id="@+id/buttn"
-        android:layout_width="112dp"
-        android:layout_height="wrap_content"
-        android:onClick="deletar"
-        android:text="Deletar" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="113dp"
-        android:layout_height="wrap_content"
-        android:onClick="cancelar"
-        android:text="Cancelar" />
+        <Button
+            android:id="@+id/buttn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="deletar"
+            android:text="Deletar" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cancelar"
+            android:text="Cancelar" />
+
+
 
 </LinearLayout>
+</ScrollView>

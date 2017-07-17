@@ -1,85 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.ufop.barbara.futmanbarbara.Jogadores">
+    tools:context="br.ufop.barbara.futmanbarbara.Partidas">
 
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="78dp"
+        android:layout_height="89dp"
         app:srcCompat="@drawable/blusa1"
         tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-        android:layout_marginEnd="27dp"
-        app:layout_constraintRight_toRightOf="@+id/lista"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar6"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/toolbar6"
-        app:layout_constraintTop_toTopOf="@+id/imageView4"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="27dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="25dp" />
 
 
     <Chronometer
-            android:id="@+id/chronometer2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:typeface="serif"
+        android:id="@+id/chronometer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:typeface="serif"
         android:layout_centerVertical="true"
-            android:layout_alignLeft="@+id/button2"
-            android:layout_alignStart="@+id/button2"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="41dp"
         app:layout_constraintTop_toBottomOf="@+id/toolbar6"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="42dp"
         app:layout_constraintLeft_toLeftOf="parent" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/lista"
-        android:layout_marginBottom="30dp"
-        android:layout_marginEnd="87dp"
-        android:layout_marginRight="87dp"
-        android:layout_toEndOf="@+id/lista"
-        android:layout_toRightOf="@+id/lista"
-        android:onClick="resetChronometer"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintRight_creator="1" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/lista"
-        android:layout_marginBottom="30dp"
-        android:layout_marginLeft="87dp"
-        android:layout_marginStart="87dp"
-        android:layout_toEndOf="@+id/button3"
-        android:layout_toRightOf="@+id/button3"
-        android:elevation="0dp"
-        android:onClick="startChronometer"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="504dp"
+        tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startChronometer"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="resetChronometer"
+            android:text="Button" />
+    </LinearLayout>
+
+
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar6"
@@ -97,59 +82,170 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="0dp"
-        android:layout_height="128dp"
+        android:layout_width="105dp"
+        android:layout_height="0dp"
         app:srcCompat="@drawable/blusa2"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        android:layout_marginStart="27dp"
-        android:layout_marginEnd="27dp"
-        app:layout_constraintRight_toRightOf="@+id/toolbar6"
-        android:layout_marginTop="53dp"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/lista2"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="27dp"
-        android:layout_marginRight="27dp" />
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        android:layout_marginRight="16dp" />
 
-    <ListView
-        android:id="@+id/lista2"
-        android:layout_width="0dp"
-        android:layout_height="251dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/toolbar5"
-        android:layout_toRightOf="@+id/toolbar5"
+    <TabHost
+        android:layout_width="362dp"
+        android:layout_height="324dp"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="27dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="27dp"
-        app:layout_constraintRight_toRightOf="@+id/toolbar6"
-        android:layout_marginTop="141dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="122dp"
-        app:layout_constraintLeft_toLeftOf="@+id/button3"
-        app:layout_constraintTop_toTopOf="@+id/imageView4"
-        android:layout_marginLeft="27dp"
-        android:layout_marginRight="27dp" />
-
-    <ListView
-        android:id="@+id/lista"
-        android:layout_width="132dp"
-        android:layout_height="0dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_toEndOf="@+id/toolbar5"
-        android:layout_toRightOf="@+id/toolbar5"
-        app:layout_constraintBottom_toBottomOf="@+id/lista2"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/lista2"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:id="@+id/tabHost">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1">
+
+                    <ListView
+                        android:id="@+id/jogo"
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@+id/toolbar5"
+                        android:layout_toRightOf="@+id/toolbar5"
+                        tools:layout_editor_absoluteX="236dp"
+                        tools:layout_editor_absoluteY="194dp"
+                        android:layout_weight="0.18" />
+
+                    <com.github.clans.fab.FloatingActionMenu
+                        android:layout_width="37dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="@dimen/fab_margin"
+                        android:onClick="add"
+                        app:srcCompat="@android:drawable/ic_input_add"
+                        android:id="@+id/fbamenu"
+                        android:layout_marginBottom="11dp"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginRight="11dp"
+                        fab:menu_animationDelayPerItem="55"
+                        fab:menu_backgroundColor="@android:color/transparent"
+                        fab:menu_buttonSpacing="0dp"
+                        fab:menu_colorNormal="@android:color/holo_green_light"
+                        fab:menu_colorPressed="@android:color/holo_green_light"
+                        fab:menu_fab_size="normal"
+                        fab:menu_icon="@drawable/fab_add"
+                        fab:menu_labels_colorRipple="#66efecec"
+                        fab:menu_labels_cornerRadius="3dp"
+                        fab:menu_labels_ellipsize="none"
+                        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+                        fab:menu_labels_margin="0dp"
+                        fab:menu_labels_maxLines="-1"
+                        fab:menu_labels_padding="8dp"
+                        fab:menu_labels_position="left"
+                        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+                        fab:menu_labels_showShadow="true"
+                        fab:menu_labels_singleLine="false"
+                        fab:menu_labels_textColor="@android:color/holo_green_light"
+                        fab:menu_labels_textSize="15sp"
+                        fab:menu_openDirection="up"
+                        fab:menu_shadowRadius="4dp"
+                        fab:menu_shadowXOffset="1dp"
+                        fab:menu_shadowYOffset="4dp"
+                        fab:menu_showShadow="true"
+                        android:layout_weight="0.64">
+
+                        <com.github.clans.fab.FloatingActionButton
+                            android:id="@+id/fab1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            fab:fab_label="Adicionar jogador"
+                            fab:fab_size="mini"
+                            fab:rippleColor="@color/colorgreen"
+                            fab:srcCompat="@drawable/adduser" />
+
+                        <com.github.clans.fab.FloatingActionButton
+                            android:id="@+id/fba2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            fab:fab_label="Limpar lista"
+                            fab:fab_size="mini"
+                            fab:srcCompat="@drawable/lixo" />
+
+                        <com.github.clans.fab.FloatingActionButton
+                            android:id="@+id/fba3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            fab:fab_label="Sortear times"
+                            fab:fab_size="mini"
+                            fab:srcCompat="@drawable/sorteio" />
+                    </com.github.clans.fab.FloatingActionMenu>/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:baselineAligned="false">
+
+                    <ListView
+                        android:id="@+id/partida"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@+id/toolbar5"
+                        android:layout_toRightOf="@+id/toolbar5"
+                        tools:layout_editor_absoluteX="236dp"
+                        tools:layout_editor_absoluteY="194dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/espera"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@+id/toolbar5"
+                        android:layout_toRightOf="@+id/toolbar5"
+                        tools:layout_editor_absoluteX="236dp"
+                        tools:layout_editor_absoluteY="194dp" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
 
 
 </android.support.constraint.ConstraintLayout>
