@@ -79,4 +79,60 @@
         android:layout_height="wrap_content"
         android:textStyle="normal"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Derrota:"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView5"
+        app:layout_constraintRight_toLeftOf="@+id/nome"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.083" />
+
+    <TextView
+        android:id="@+id/der"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Vitoria:"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView5"
+        app:layout_constraintRight_toLeftOf="@+id/nome"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.083" />
+
+    <TextView
+        android:id="@+id/vit"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Jogos:"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView5"
+        app:layout_constraintRight_toLeftOf="@+id/nome"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.083" />
+
+    <TextView
+        android:id="@+id/part"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"/>
+
+
+
 </LinearLayout>

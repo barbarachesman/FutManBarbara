@@ -121,7 +121,6 @@
                         android:layout_alignParentBottom="true"
                         android:layout_alignParentRight="true"
                         android:layout_margin="@dimen/fab_margin"
-                        android:onClick="add"
                         app:srcCompat="@android:drawable/ic_input_add"
                         android:id="@+id/fbamenu"
                         android:layout_marginBottom="11dp"
@@ -223,33 +222,19 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <Space
-                        android:layout_weight="0.5"
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"/>
-
                     <Button
                         android:id="@+id/button3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:onClick="startChronometer"
                         android:drawableTop="@android:drawable/ic_media_play"
                         android:background="@color/colorgreen"
-                        android:text="Button" />
+                        android:textColor="@color/colorwhite"
 
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="1dp"
-                        android:layout_weight="0.3"/>
+                        android:layout_weight="1"
+                        />
 
-                    <Button
-                        android:id="@+id/button2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:onClick="resetChronometer"
-                        android:drawableTop="@android:drawable/ic_media_pause"
-                        android:background="@color/colorgreen"
-                        android:text="Button" />
+
                 </LinearLayout>
                 </LinearLayout>
 
