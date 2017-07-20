@@ -175,6 +175,7 @@
                             android:layout_height="wrap_content"
                             fab:fab_label="Sortear times"
                             fab:fab_size="mini"
+                            android:onClick="sorteioTimes"
                             fab:fab_colorNormal="#ff6666"
                             fab:fab_colorPressed="#ff6666"
                             fab:fab_colorRipple="#ff6666"
@@ -188,22 +189,44 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <ListView
-                        android:id="@+id/partida"
-                        android:layout_width="90dp"
-                        android:layout_height="100dp"
-                        android:layout_alignParentBottom="true"
-                        android:layout_toEndOf="@+id/idd"
-                        android:layout_toRightOf="@+id/idd"
-                        tools:layout_editor_absoluteX="236dp"
-                        android:gravity="left"
-                        tools:layout_editor_absoluteY="194dp" />
 
-                    <ListView
-                        android:id="@+id/partida1"
-                        android:layout_width="100dp"
-                        android:gravity="right"
-                        android:layout_height="100dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ListView
+                            android:id="@+id/partida"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"/>
+
+                        <ListView
+                            android:id="@+id/partida1"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"/>
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_weight="5"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"/>
 
                     <Button
                         android:id="@+id/button3"
@@ -214,6 +237,11 @@
                         android:background="@color/colorgreen"
                         android:text="Button" />
 
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="0.3"/>
+
                     <Button
                         android:id="@+id/button2"
                         android:layout_width="wrap_content"
@@ -222,6 +250,7 @@
                         android:drawableTop="@android:drawable/ic_media_pause"
                         android:background="@color/colorgreen"
                         android:text="Button" />
+                </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
